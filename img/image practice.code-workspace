@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\anchortaglink"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "practice"
+	}
+}
