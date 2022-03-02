@@ -28,3 +28,7 @@ console.log(c3);
 console.log(c4);
 console.log(c1.name);
 console.log(c4.amount);
+
+/*export{min_bal,c1}*/    //ES6-Only for reactlevel
+module.exports=c3         //default export for single value ES5
+module.exports={c2,c1}    //named export for multiple values ES5
