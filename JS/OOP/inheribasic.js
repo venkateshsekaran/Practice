@@ -14,3 +14,4 @@ console.log(c1.assets);
 console.log(c2.assets);
 console.log(c1.income);
 console.log(c2.income);
+console.log(c2.income_1);
