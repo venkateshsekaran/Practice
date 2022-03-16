@@ -2,9 +2,12 @@ let employees = [{ id: 101, name: "Rahul", sal: 45000 },
 { id: 102, name: "Sonia", sal: 55000 }
 ]
 let createEmployee = (emp) => {
+    return new Promise ((resolve,reject) => {
+        let flag = true;
     setTimeout(() => {
-        employees.push(emp)
-    }, 3000)
+        employees.push(emp);
+        flag ? resolve("success") : reject("failed")
+    }, 1500)})
 }
 let getEmployee = () => {
     setTimeout(() => {
@@ -17,8 +20,6 @@ let getEmployee = () => {
                            </tr>`
         });
         document.getElementById('tbody-data').innerHTML = rows
-    }, 1000)
+    }, 2000)
 }
-createEmployee({ id: 103, name: "Priyanka", sal: 65000 })
-
-getEmployee();
+createEmployee({ id: 103, name: "Priyanka", sal: 65000 },getEmployee()).then((msg)=>{console.log(msg);}).catch((err)=>{console.log(err);})
