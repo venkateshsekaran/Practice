@@ -1,5 +1,6 @@
 import reactdom from "react-dom";
-import App from "./Doit";
-import Getit from "./Getit";
-reactdom.render(<App />, document.getElementById("check"));
-reactdom.render(<Getit />, document.getElementById("check1"));
+import Nav from "./navbar/Nav";
+import Body from "./navbar/Body";
+
+reactdom.render(<Nav />, document.getElementById("check"));
+reactdom.render(<Body />, document.getElementById("check1"));
