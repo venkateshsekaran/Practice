@@ -1,5 +1,5 @@
 import React from "react";
-import fn2 from "./Fn2";
+import Fn2 from "./Fn2";
 
 class Class1 extends React.Component {
   product_details = {
