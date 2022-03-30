@@ -1,5 +1,5 @@
 import reactdom from "react-dom";
 
-import Basic from "./state/Basic";
+import Nav from "./navbar/Nav";
 
-reactdom.render(<Basic />, document.getElementById("check"));
+reactdom.render(<Nav />, document.getElementById("check"));
