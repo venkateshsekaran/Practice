@@ -1,5 +1,5 @@
 import React from "react";
-import Example from "../state/Example";
+import Salary from "./../state/Salary";
 class Nav extends React.Component {
   render() {
     return (
@@ -28,7 +28,7 @@ class Nav extends React.Component {
             </ul>
           </div>
         </nav>
-        <Example />
+        <Salary />
       </div>
     );
   }
