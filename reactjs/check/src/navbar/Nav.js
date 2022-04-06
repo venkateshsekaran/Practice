@@ -1,5 +1,7 @@
 import React from "react";
-import List from "../state/List";
+import Lifecycle from "../componentlifecycle/Lifecycle";
+import Lifecycle1 from "../componentlifecycle/Lifecycle1";
+import Formhandling from "../formhandling/Formhandling";
 class Nav extends React.Component {
   render() {
     return (
@@ -28,7 +30,9 @@ class Nav extends React.Component {
             </ul>
           </div>
         </nav>
-        <List />
+        <Lifecycle />
+        <Lifecycle1 />
+        <Formhandling />
       </div>
     );
   }
