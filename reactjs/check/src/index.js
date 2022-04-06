@@ -1,4 +1,4 @@
 import reactdom from "react-dom";
-import App from "./Reactor DOM/App";
+import Product from "./react hooks/Product";
 
-reactdom.render(<App />, document.getElementById("check"));
+reactdom.render(<Product />, document.getElementById("check"));
