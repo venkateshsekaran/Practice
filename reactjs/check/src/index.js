@@ -1,5 +1,4 @@
 import reactdom from "react-dom";
+import App from "./Reactor DOM/App";
 
-import Nav from "./navbar/Nav";
-
-reactdom.render(<Nav />, document.getElementById("check"));
+reactdom.render(<App />, document.getElementById("check"));
