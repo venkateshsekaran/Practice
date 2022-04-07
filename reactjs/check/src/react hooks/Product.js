@@ -15,7 +15,7 @@ function Product() {
   return (
     <div className="container mt-5">
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-11">
           <table className="table table-hover">
             <thead className="bg-dark text-white">
               <tr>
