@@ -1,5 +1,5 @@
 import reactdom from "react-dom";
 
-import Axios1 from "./Axios/Axios1";
+import App1 from "./Axios/App1";
 
-reactdom.render(<Axios1 />, document.getElementById("check"));
+reactdom.render(<App1 />, document.getElementById("check"));
