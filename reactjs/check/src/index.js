@@ -1,5 +1,5 @@
 import reactdom from "react-dom";
 
-import Formfun from "./formhandling/Formfun";
+import Axios1 from "./Axios/Axios1";
 
-reactdom.render(<Formfun />, document.getElementById("check"));
+reactdom.render(<Axios1 />, document.getElementById("check"));
