@@ -9,7 +9,7 @@ function step1(x, y) {
   }
 }
 function myfunction(x, y) {
-  if (x % y == 0 && x >= 0) {
+  if (step1(x, y)) {
     return x;
   } else {
     while (!step1(++x, y)) {
@@ -19,5 +19,5 @@ function myfunction(x, y) {
   }
 }
 
-let output = myfunction(-5, 7);
+let output = myfunction(7, 3);
 console.log(output);
