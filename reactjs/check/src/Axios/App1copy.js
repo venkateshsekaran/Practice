@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./Navbar1";
-import Home1 from "./Home1";
-import Reactcontact from "./Reactcontact";
+import Axios1 from "./Axios1";
+import Navbar from "./Navbar";
+import Home from "../Reactor DOM/Home";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App1 = () => {
   return (
@@ -9,8 +9,8 @@ const App1 = () => {
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/contactapp" element={<Reactcontact />} />
-          <Route path="/home" element={<Home1 />} />
+          <Route path="/axios1" element={<Axios1 />} />
+          <Route path="/home" element={<Home />} />
         </Routes>
       </Router>
     </div>
