@@ -4,7 +4,7 @@
 // If not, return the next higher natural number that is divisible by y
 
 function step1(x, y) {
-  if (x % y == 0 && x >= 0) {
+  if (x % y == 0) {
     return x;
   }
 }
@@ -13,7 +13,9 @@ function myfunction(x, y) {
     return x;
   } else {
     while (!step1(++x, y)) {
-      if (x == 0) return x;
+      if (x == 0) {
+        return x;
+      }
     }
     return x;
   }
