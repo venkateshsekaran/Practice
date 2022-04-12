@@ -37,3 +37,16 @@ function myfunction(x, y) {
 
 let output = myfunction(-6, 3);
 console.log(output);
+
+/*const demo1 = (x, y) => {
+  let temp = x;
+  for (; ; temp++) {
+    if (temp % y == 0) {
+      if (x < 0) temp = 0;
+      if (temp % y == 0) {
+        return temp;
+      }
+    }
+  }
+};
+console.log(demo1(-5, 7));*/
