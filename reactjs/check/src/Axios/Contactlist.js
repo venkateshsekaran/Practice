@@ -1,5 +1,8 @@
 import React from "react";
 class Contactlist extends React.Component {
+  sethandler = (contact) => {
+    this.props.selecteddata(contact);
+  };
   render() {
     return (
       <div className="container">
@@ -15,15 +18,18 @@ class Contactlist extends React.Component {
                 </tr>
               </thead>
               <tbody>
-                {this.props.contact.map((conc) => {
+                {this.props.contacts.map((contact) => {
                   return (
-                    <tr key={conc.login.uuid}>
-                      <td>{conc.login.uuid.slice(-4)}</td>
-                      <td>{conc.name.first.toUpperCase()}</td>
-                      <td>{conc.email}</td>
+                    <tr
+                      key={contact.login.uuid}
+                      onMouseOver={this.sethandler.bind(this, contact)}
+                    >
+                      <td>{contact.login.uuid.slice(-4)}</td>
+                      <td>{contact.name.first.toUpperCase()}</td>
+                      <td>{contact.email}</td>
                       <td>
-                        {conc.gender.slice(0, 1).toUpperCase() +
-                          conc.gender.slice(1)}
+                        {contact.gender.slice(0, 1).toUpperCase() +
+                          contact.gender.slice(1)}
                       </td>
                     </tr>
                   );
