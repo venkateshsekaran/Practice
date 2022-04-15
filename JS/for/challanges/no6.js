@@ -66,3 +66,15 @@ function myFunction(a) {
 }
 let output2 = myFunction([99, 1, 1]);
 console.log(output2);*/
+
+//pending
+function myFunction(a, b) {
+  a.reduce((obj, curr, index) => {
+    if (index >= 0) {
+      obj[curr] = obj[curr] + b[index];
+    }
+    return obj;
+  }, {});
+}
+let output2 = myFunction(["w", "x", "y", "z"], [10, 9, 5, 2]);
+console.log(output2);

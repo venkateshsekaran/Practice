@@ -1,9 +1,12 @@
+// Sum two numbers
 // Write a function that takes a number as argument
 // If the number is even, return true
 // Otherwise, return false
 function myFunction(a) {
-  return a % 2 == 0;
+  return a % 2 === 0;
 }
+let output = myFunction(5);
+console.log(output);
 //Test Cases:
 //myFunction(10)   Expected true
 //myFunction(-4)   Expected true

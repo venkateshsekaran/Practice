@@ -85,11 +85,10 @@ console.log(output);*/
 let output = myFunction(2, 10);
 console.log(output);*/
 
-/*function myFunction(arr) {
+function myFunction(arr) {
   const sorting = arr.reduce((acc, cur) => {
     let char = cur.charAt(0).toLowerCase();
     acc[char] = [].concat(acc[char] || [], cur);
-    console.log(acc);
     return acc;
   }, {});
 
@@ -99,13 +98,13 @@ console.log(output);*/
   return res;
 }
 let output = myFunction(["Alf", "Alice", "Ben"]);
-console.log(output);*/
+console.log(output);
 
-function myFunction(arr, num) {
+/*function myFunction(arr, num) {
   console.log(arr);
   console.log(arr.unshift(6, 7));
   return num >= 6 ? arr.unshift(num) : arr.unshift(0);
 }
 
 let output1 = myFunction([1, 2, 3], 6);
-console.log(output1);
+console.log(output1);*/
