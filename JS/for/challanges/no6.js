@@ -68,7 +68,7 @@ let output2 = myFunction([99, 1, 1]);
 console.log(output2);*/
 
 //pending
-function myFunction(a, b) {
+/*function myFunction(a, b) {
   a.reduce((obj, curr, index) => {
     if (index >= 0) {
       obj[curr] = obj[curr] + b[index];
@@ -77,4 +77,21 @@ function myFunction(a, b) {
   }, {});
 }
 let output2 = myFunction(["w", "x", "y", "z"], [10, 9, 5, 2]);
-console.log(output2);
+console.log(output2);*/
+
+function myfunction(arr) {
+  const result = {};
+  for (let i = 0; i < arr.length; i++) {
+    var item = arr[i];
+    const firstletter = item[0].toLowerCase();
+    if (!result[firstletter]) {
+      result[firstletter] = [];
+    }
+    if (result[firstletter].indexOf(item) < 0) {
+      result[firstletter].push(item);
+    }
+  }
+  return result;
+}
+let output = myfunction(["Alf", "Alice", "Ben"]);
+console.log(output);

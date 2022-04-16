@@ -89,6 +89,7 @@ function myFunction(arr) {
   const sorting = arr.reduce((acc, cur) => {
     let char = cur.charAt(0).toLowerCase();
     acc[char] = [].concat(acc[char] || [], cur);
+    console.
     return acc;
   }, {});
 

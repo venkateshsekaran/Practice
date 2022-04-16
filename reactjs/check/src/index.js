@@ -1,5 +1,5 @@
 import reactdom from "react-dom";
 
-import App1 from "./Axios/App1";
+import Appreact from ".//reactall/Appreact";
 
-reactdom.render(<App1 />, document.getElementById("check"));
+reactdom.render(<Appreact />, document.getElementById("check"));
