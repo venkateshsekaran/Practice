@@ -5,7 +5,8 @@
 function myFunction(a) {
   return a % 2 === 0;
 }
-let output = myFunction(5);
+
+let output = myFunction(5)
 console.log(output);
 //Test Cases:
 //myFunction(10)   Expected true
