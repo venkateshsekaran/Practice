@@ -25,7 +25,7 @@ console.log(output1);*/
   }, {});
 }
 let output1 = myFunction([1, "b"], ["a", 2]);
-console.log(output1);
+console.log(output1);*/
 
 function myFunction(a, b) {
   return a.reduce((acc, cur, i) => ({ ...acc, [cur]: b[i] }), {});
@@ -33,7 +33,7 @@ function myFunction(a, b) {
 let output2 = myFunction([1, "b"], ["a", 2]);
 console.log(output2);
 
-function myFunction(a, b) {
+/*function myFunction(a, b) {
   let result = {};
   a.forEach((element, index) => {
     result[element] = b[index];
@@ -73,7 +73,7 @@ function myFunction(obj) {
 let output2 = myFunction({ z: "a", y: "b", x: "c", w: "d" });
 console.log(output2);*/
 
-function myFunction(obj) {
+/*function myFunction(obj) {
   return Object.entries(obj).reduce((acc, [key, val]) => {
     if (val == "" || val == " ") {
       val = "null";
@@ -82,4 +82,4 @@ function myFunction(obj) {
   }, {});
 }
 let output = myFunction({ a: "", b: "b", c: " ", d: "d" });
-console.log(output);
+console.log(output);*/

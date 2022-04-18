@@ -1,5 +1,5 @@
 import reactdom from "react-dom";
 
-import Appreact from ".//reactall/Appreact";
+import App from ".//App";
 
-reactdom.render(<Appreact />, document.getElementById("check"));
+reactdom.render(<App />, document.getElementById("check"));
