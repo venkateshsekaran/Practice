@@ -83,3 +83,27 @@ console.log(output2);*/
 }
 let output = myFunction({ a: "", b: "b", c: " ", d: "d" });
 console.log(output);*/
+function myFunction(obj) {
+  {
+    const { age, ...rest } = obj;
+    console.log(rest);
+    return Object.entries(rest).map(([key, val]) => {
+      var acc = {};
+      if (key === "size") {
+        val = val + "cm";
+      } else if (key === "weight") {
+        val = val + "kg";
+      }
+
+      acc[key] = val;
+    });
+  }
+}
+let output = myFunction({
+  fn: "Lisa",
+  ln: "Müller",
+  age: 17,
+  size: 175,
+  weight: 67,
+});
+console.log(output);
