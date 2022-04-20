@@ -2,8 +2,10 @@ import React from "react";
 import Navbar from "../src/redux/Navbar";
 import { Provider } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Message from ".//redux/Message";
-import { store } from "./Redux1/Message/Message.store";
+
+import { Product } from "./redux/Product";
+
+import { store } from "./redux/product/store";
 
 const App = () => {
   return (
@@ -12,7 +14,7 @@ const App = () => {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/message" element={<Message />} />
+            <Route path="/product" element={<Product />} />
           </Routes>
         </Router>
       </Provider>

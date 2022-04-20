@@ -27,11 +27,11 @@ console.log(output1);*/
 let output1 = myFunction([1, "b"], ["a", 2]);
 console.log(output1);*/
 
-function myFunction(a, b) {
+/*function myFunction(a, b) {
   return a.reduce((acc, cur, i) => ({ ...acc, [cur]: b[i] }), {});
 }
 let output2 = myFunction([1, "b"], ["a", 2]);
-console.log(output2);
+console.log(output2);*/
 
 /*function myFunction(a, b) {
   let result = {};
@@ -83,27 +83,63 @@ console.log(output2);*/
 }
 let output = myFunction({ a: "", b: "b", c: " ", d: "d" });
 console.log(output);*/
-function myFunction(obj) {
+/*function myFunction(obj) {
   {
-    const { age, ...rest } = obj;
+    const { age, email, ...rest } = obj;
     console.log(rest);
-    return Object.entries(rest).map(([key, val]) => {
-      var acc = {};
-      if (key === "size") {
-        val = val + "cm";
-      } else if (key === "weight") {
-        val = val + "kg";
+    return Object.entries(rest).reduce((acc, [key, val]) => {
+      if (key == "size") {
+        return { ...acc, [key]: val.toString() + "cm" };
+      } else if (key == "weight") {
+        return { ...acc, [key]: val.toString() + "kg" };
+      } else {
+        return { ...acc, [key]: val };
       }
-
-      acc[key] = val;
-    });
+    }, {});
   }
 }
 let output = myFunction({
-  fn: "Lisa",
-  ln: "Müller",
-  age: 17,
-  size: 175,
-  weight: 67,
+  fn: "Martin",
+  ln: "Harper",
+  age: 26,
+  email: "martin.harper@test.de",
+  weight: 102,
 });
+console.log(output);
+
+function myFunction(obj) {
+  return {
+    fn: obj.fn,
+    ln: obj.ln,
+    ...(obj.size && { size: `${obj.size}cm` }),
+    ...(obj.weight && { weight: `${obj.weight}kg` }),
+  };
+}
+let output1 = myFunction({
+  fn: "Matthew",
+  ln: "Müller",
+  age: 19,
+  email: "matthew@mueller.de",
+});
+console.log(output1);*/
+
+function myFunction(arr, str) {
+  let continent = "continent";
+  let acc = [];
+  return {
+    ...acc,
+    ...arr[0],
+    ...acc,
+    ...arr[1],
+    [continent]: str,
+  };
+}
+
+let output = myFunction(
+  [
+    { city: "Tokyo", country: "Japan" },
+    { city: "Bangkok", country: "Thailand" },
+  ],
+  "Asia"
+);
 console.log(output);
