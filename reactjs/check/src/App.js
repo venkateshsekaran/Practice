@@ -1,23 +1,18 @@
 import React from "react";
-import Navbar from "../src/redux/Navbar";
-import { Provider } from "react-redux";
+import Navbar from "./interview/Navbar";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import { Product } from "./redux/Product";
-
-import { store } from "./redux/product/store";
+import Employee from "./interview/components/Employee";
 
 const App = () => {
   return (
     <div>
-      <Provider store={store}>
-        <Router>
-          <Navbar />
-          <Routes>
-            <Route path="/product" element={<Product />} />
-          </Routes>
-        </Router>
-      </Provider>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/employee" element={<Employee />} />
+        </Routes>
+      </Router>
     </div>
   );
 };

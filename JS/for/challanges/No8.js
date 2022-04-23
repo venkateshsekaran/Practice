@@ -123,16 +123,8 @@ let output1 = myFunction({
 });
 console.log(output1);*/
 
-function myFunction(arr, str) {
-  let continent = "continent";
-  let acc = [];
-  return {
-    ...acc,
-    ...arr[0],
-    ...acc,
-    ...arr[1],
-    [continent]: str,
-  };
+/*function myFunction(arr, str) {
+  return arr.map((cur) => ({ ...cur, continent: str }));
 }
 
 let output = myFunction(
@@ -142,4 +134,40 @@ let output = myFunction(
   ],
   "Asia"
 );
+console.log(output);*/
+
+function myFunction(arr) {
+  return arr.reduce((count, cur) => {
+    count[cur] ? (count[cur] += 1) : (count[cur] = 1);
+
+    return count;
+  }, {});
+}
+
+let output = myFunction([4, 3, 2, 1]);
 console.log(output);
+
+/*function myFunction(arr) {
+  let count = {};
+
+  for (i = 0; i < arr.length; i++) {
+    if (count[arr[i]]) {
+      count[arr[i]] += 1;
+    } else {
+      count[arr[i]] = 1;
+    }
+  }
+
+  return count;
+}
+
+let output1 = myFunction([1, 2, 2, 2, 3]);
+console.log(output1);*/
+
+function myFunction(arr) {
+  return arr.reduce((acc, cur) => {
+    return { ...acc, [cur]: (acc[cur] || 0) + 1 };
+  }, {});
+}
+let output2 = myFunction([1, 2, 2, 2, 3]);
+console.log(output2);

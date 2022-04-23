@@ -11,8 +11,8 @@ class Navbarreact extends React.Component {
           <div className="ml-auto">
             <ul className="navbar-nav">
               <li className="nav-list">
-                <Link to="./product" className="nav-link">
-                  Product
+                <Link to="./user" className="nav-link">
+                  USer
                 </Link>
               </li>
             </ul>

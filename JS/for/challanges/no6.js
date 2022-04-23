@@ -79,7 +79,7 @@ console.log(output2);*/
 let output2 = myFunction(["w", "x", "y", "z"], [10, 9, 5, 2]);
 console.log(output2);*/
 
-function myfunction(arr) {
+/*function myfunction(arr) {
   const result = {};
   for (let i = 0; i < arr.length; i++) {
     var item = arr[i];
@@ -94,4 +94,17 @@ function myfunction(arr) {
   return result;
 }
 let output = myfunction(["Alf", "Alice", "Ben"]);
+console.log(output);*/
+
+function myfunction(str) {
+  let a = str.split(" ");
+  let temp = a[0];
+  a[0] = a[1];
+  a[1] = temp;
+  temp = a[2];
+  a[2] = a[3];
+  a[3] = temp;
+  return a.join(" ");
+}
+let output = myfunction("this is sample test");
 console.log(output);
