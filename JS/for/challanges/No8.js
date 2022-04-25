@@ -136,7 +136,7 @@ let output = myFunction(
 );
 console.log(output);*/
 
-function myFunction(arr) {
+/*function myFunction(arr) {
   return arr.reduce((count, cur) => {
     count[cur] ? (count[cur] += 1) : (count[cur] = 1);
 
@@ -145,7 +145,7 @@ function myFunction(arr) {
 }
 
 let output = myFunction([4, 3, 2, 1]);
-console.log(output);
+console.log(output);*/
 
 /*function myFunction(arr) {
   let count = {};
@@ -163,11 +163,30 @@ console.log(output);
 
 let output1 = myFunction([1, 2, 2, 2, 3]);
 console.log(output1);*/
-
-function myFunction(arr) {
+/*function myFunction(arr) {
   return arr.reduce((acc, cur) => {
     return { ...acc, [cur]: (acc[cur] || 0) + 1 };
   }, {});
 }
 let output2 = myFunction([1, 2, 2, 2, 3]);
+console.log(output2);*/
+
+function myFunction(arr) {
+  let val0 = arr.filter((cur) => {
+    return cur == 0;
+  });
+  let val1 = arr.filter((cur) => {
+    return cur !== 0;
+  });
+  return val1.sort().concat(val0);
+}
+let output2 = myFunction([0, 1, 1, 2, 4, 0, 3, 5]);
 console.log(output2);
+
+/*function myFunction(arr) {
+  return arr.filter((item) => {
+    return arr.indexOf(item) == arr.lastIndexOf(item);
+  });
+}
+let output3 = myFunction([5, 5, 10, 10, 30, 40, 50, 20]);
+console.log(output3);*/
