@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <script type="text/javascript" src="./index.js"></script>
+  </head>
+  <body onload="display()">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a class="navbar-brand"> List with filter </a>
+    </nav>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <h3>Filter</h3>
+          <input  id="searchInput" type="text" placeholder="search" />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table table-hover">
+            <thead class="bg-dark text-white">
+              <tr>
+                <th>ID</th>
+                <th>First Name</th>
+                <th>Last Name  </th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="listdata"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>
+  <script>
+      let searchinput = document.getElementById("searchInput");
+      searchinput.addEventListener("keyup", filter);
+function filter() {
+  let filterValue = document.getElementById("searchInput").value.toLowerCase();
+  let rows = "";
+  const result = students.filter((details) =>
+    details.first_name.toLowerCase().includes(filterValue)
+  );
+  if (result.length > 0) {
+    result.map((student1) => {
+      rows += `<tr>
+    <td>${student1.id}</td>
+    <td>${student1.first_name}</td>
+    <td>${student1.last_name}</td>
+    <td>${student1.email}</td>
+      </tr>`;
+    });
+    
+  }
+  else{
+     rows="No item found"
+  }document.getElementById("listdata").innerHTML = rows;
+}
+
+  </script>
+</html>
