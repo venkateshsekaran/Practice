@@ -1,0 +1,17 @@
+import math
+from math import pi, sqrt,floor ,ceil,pow,tau,remainder,radians,isnan,nan,modf,isinf,isfinite,isclose
+x=float(nan)
+print(dir(math))
+print(pi)
+print(sqrt(16))
+print (floor(10.8))
+print (ceil(10.2))
+print(pow(2,3))
+print(tau*5)
+print(remainder(5,4))
+print(radians(180))
+print(isnan(x))
+print(modf(100.12))
+print(isinf(100.12))
+print(isfinite(100.12))
+print(isclose(100.00,100))
