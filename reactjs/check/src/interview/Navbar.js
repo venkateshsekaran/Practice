@@ -12,6 +12,11 @@ const Navbar = () => {
               Employee
             </a>
           </li>
+          <li className="nav-list">
+            <a href="./list" className="nav-link">
+              List
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
