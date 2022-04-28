@@ -36,7 +36,7 @@ let output = myFunction(
 );
 console.log(output);*/
 
-/*function myFunction(a, b) {
+function myFunction(a, b) {
   let sec = Math.abs((a.getTime() - b.getTime()) / 1000);
   let acc = {};
   acc["hrs"] = Math.trunc(sec / 3600);
@@ -44,16 +44,16 @@ console.log(output);*/
   acc["sec"] = Math.trunc(sec % 60);
   return acc;
 }
-let output = myFunction(
+let output1 = myFunction(
   new Date("2000/01/01 09:50:23"),
   new Date("2000/01/01 08:00:00")
 );
-console.log(output);*/
+console.log(output1);
 
-function myFunction(a) {
+/*function myFunction(a) {
   let min = (a.getTime() - new Date(2021, 8, 10).getTime()) / 1000 / 60;
 
   return (min % 60) + (15 - ((min % 60) % 15));
 }
 let output = myFunction(new Date(2021, 8, 10, 15, 22, 00));
-console.log(output);
+console.log(output);*/
