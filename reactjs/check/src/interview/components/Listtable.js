@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 let Listtable = (props) => {
-  const [name, setName] = useState("");
+  const [name, setName] = useState("Search");
 
   const [foundUsers, setFoundUsers] = useState(props.Details);
 
@@ -41,7 +41,7 @@ let Listtable = (props) => {
                 </tr>
               </thead>
               <tbody>
-                {foundUsers.length > 0 ? (
+                {foundUsers.length > 0 || name === "Search" ? (
                   foundUsers.map((user) => (
                     <tr>
                       <td>{user.id}</td>
@@ -51,7 +51,11 @@ let Listtable = (props) => {
                     </tr>
                   ))
                 ) : (
-                  <h1>No results found!</h1>
+                  <tr>
+                    <td>
+                      <h1>No results found!</h1>
+                    </td>
+                  </tr>
                 )}
               </tbody>
             </table>
