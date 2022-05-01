@@ -17,6 +17,11 @@ const Navbar = () => {
               List
             </a>
           </li>
+          <li className="nav-list">
+            <a href="./curconvert" className="nav-link">
+              Currency converter
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
