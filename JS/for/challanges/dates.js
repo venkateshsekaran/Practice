@@ -56,4 +56,4 @@ console.log(output1);
   return (min % 60) + (15 - ((min % 60) % 15));
 }
 let output = myFunction(new Date(2021, 8, 10, 15, 22, 00));
-console.log(output);
+console.log(output);*/
