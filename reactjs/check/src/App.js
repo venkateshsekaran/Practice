@@ -1,22 +1,29 @@
-import React from "react";
-import Navbar from "./interview/Navbar";
-import List from "./interview/components/List";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Employee from "./interview/components/Employee";
-import Currencyconvert from "./interview/components/Currencyconvert";
+import React, { Component } from "react";
+import Navbar from "./thunk/Navbar";
+import User from "./thunk/User";
+import { store } from "./thunk/redux/store";
+import { Provider } from "react-redux";
+import Register from "./useref/Register/Register";
+import Signup from "./useref/Register/Signup";
 
-const App = () => {
-  return (
-    <div>
-      <Router>
-        <Navbar />
-        <Routes>
-          <Route path="/employee" element={<Employee />} />
-          <Route path="/list" element={<List />} />
-          <Route path="/curconvert" element={<Currencyconvert />} />
-        </Routes>
-      </Router>
-    </div>
-  );
-};
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Provider store={store}>
+          <Router>
+            <Navbar />
+            <Routes>
+              <Route path="/user" element={<User />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/signup" element={<Signup />} />
+            </Routes>
+          </Router>
+        </Provider>
+      </div>
+    );
+  }
+}
+
 export default App;
