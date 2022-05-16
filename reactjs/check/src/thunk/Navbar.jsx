@@ -30,6 +30,16 @@ class Navbar extends Component {
                 Sign-up1
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/user1" className="nav-link">
+                User1
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/filter" className="nav-link">
+                Filter
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
