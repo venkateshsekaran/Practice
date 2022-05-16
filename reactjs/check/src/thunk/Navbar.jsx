@@ -40,6 +40,11 @@ class Navbar extends Component {
                 Filter
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/calender" className="nav-link">
+                Calender
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

@@ -8,6 +8,7 @@ import Signup from "./useref/Register/Signup";
 import Signup1 from "./useref/Register/Signup1";
 import Filter from "./useref/Register/Filter";
 import { store } from "./thunk/redux/store";
+import Calender1 from "./useref/Register/Calender1";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
               <Route path="/signup" element={<Signup />} />
               <Route path="/signup1" element={<Signup1 />} />
               <Route path="/filter" element={<Filter />} />
+              <Route path="/calender" element={<Calender1 />} />
             </Routes>
           </Router>
         </Provider>
