@@ -57,7 +57,7 @@ const nextPrime = (num = 101) => {
   return num;
 };
 console.log(nextPrime(num));*/
-const isPrime = (num) => {
+/*const isPrime = (num) => {
   let sqrtnum = Math.floor(Math.sqrt(num));
   let prime = num !== 1;
   for (let i = 2; i < sqrtnum + 1; i++) {
@@ -73,4 +73,13 @@ function myFunction(num) {
   return num;
 }
 let output = myFunction(101);
-console.log(output);
+console.log(output);*/
+
+let l1 = [2, 4, 3];
+let l2 = [5, 6, 4];
+let sum = parseInt(l1.join("")) + parseInt(l2.join(""));
+let str = sum.toString();
+let result = str.split("").reverse();
+console.log(sum);
+console.log(str);
+console.log(result);
