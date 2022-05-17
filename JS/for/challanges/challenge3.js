@@ -75,11 +75,21 @@ function myFunction(num) {
 let output = myFunction(101);
 console.log(output);*/
 
-let l1 = [2, 4, 3];
+/*let l1 = [2, 4, 3];
 let l2 = [5, 6, 4];
 let sum = parseInt(l1.join("")) + parseInt(l2.join(""));
 let str = sum.toString();
 let result = str.split("").reverse();
 console.log(sum);
 console.log(str);
-console.log(result);
+console.log(result);*/
+
+function myFunction(a) {
+  let b = a.toFixed().split("");
+
+  let c = new Set(b);
+  return c.size;
+}
+
+let output = myFunction(101);
+console.log(output);
