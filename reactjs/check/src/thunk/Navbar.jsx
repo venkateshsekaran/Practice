@@ -5,7 +5,6 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
         <Link to="/index" className="navbar-brand">
-          {" "}
           React - Redux and Thunk
         </Link>
         <div className="ml-auto">
@@ -43,6 +42,11 @@ class Navbar extends Component {
             <li className="nav-item">
               <Link to="/calender" className="nav-link">
                 Calender
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/form" className="nav-link">
+                form1
               </Link>
             </li>
           </ul>
