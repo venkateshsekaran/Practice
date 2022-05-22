@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "./thunk/Navbar";
 import User from "./thunk/User";
-
+import Parent from "./parenttochild/Parent";
 import { Provider } from "react-redux";
 import Register from "./useref/Register/Register";
 import Signup from "./useref/Register/Signup";
@@ -10,7 +10,8 @@ import Filter from "./useref/Register/Filter";
 import { store } from "./thunk/redux/store";
 import Calender1 from "./useref/Register/Calender1";
 import Form1 from "./practice/formhandling/Form1";
-
+import Child from "./parenttochild/Child";
+import Formfun from "./practice/formhandling/Formfun";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 class App extends Component {
   render() {
@@ -27,6 +28,8 @@ class App extends Component {
               <Route path="/filter" element={<Filter />} />
               <Route path="/calender" element={<Calender1 />} />
               <Route path="/form" element={<Form1 />} />
+              <Route path="/parent" element={<Parent />} />
+              <Route path="/child" element={<Child />} />
             </Routes>
           </Router>
         </Provider>

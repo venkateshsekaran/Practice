@@ -49,6 +49,21 @@ class Navbar extends Component {
                 form1
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to="/parent" className="nav-link">
+                Parent
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/child" className="nav-link">
+                Child
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/formfun" className="nav-link">
+                Formfun
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>

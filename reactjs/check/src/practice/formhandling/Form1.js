@@ -6,6 +6,7 @@ class Form1 extends React.Component {
       user: { Email: "", Password: "" },
     };
   }
+
   /* emailHandler = (event) => {
     this.setState({ user: { Email: event.target.value } });
   };
