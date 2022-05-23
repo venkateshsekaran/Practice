@@ -59,11 +59,6 @@ class Navbar extends Component {
                 Child
               </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/formfun" className="nav-link">
-                Formfun
-              </Link>
-            </li>
           </ul>
         </div>
       </nav>

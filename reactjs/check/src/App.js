@@ -11,7 +11,7 @@ import { store } from "./thunk/redux/store";
 import Calender1 from "./useref/Register/Calender1";
 import Form1 from "./practice/formhandling/Form1";
 import Child from "./parenttochild/Child";
-import Formfun from "./practice/formhandling/Formfun";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 class App extends Component {
   render() {

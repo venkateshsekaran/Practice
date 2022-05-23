@@ -40,7 +40,7 @@ class Reactcontact extends React.Component {
           <div className="col-md-4">
             {Object.keys(this.state.selectcontact).length > 0 ? (
               <>
-                {" "}
+                
                 <Contactdetails selecteddata={this.state.selectcontact} />
               </>
             ) : null}
