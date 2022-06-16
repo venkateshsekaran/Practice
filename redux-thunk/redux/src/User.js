@@ -17,7 +17,7 @@ const User = () => {
       <pre>{JSON.stringify(users)}</pre>
       <div className="container">
         <div className="row">
-          <div className="col">
+          <div className="col-md-12">
             <table className="table table-hover">
               <thead className="bg-dark text-white">
                 <tr>
