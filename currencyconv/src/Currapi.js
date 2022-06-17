@@ -130,7 +130,7 @@ let Currapi = () => {
                   <h6>
                     {result >= 0
                       ? `THE VALUE OF ENTERED AMOUNT IN ${signvalue1} is ${result}(${signvalue})`
-                      : `Please select currency and convert`}
+                      : `Please Enter amount, select currency and convert`}
                   </h6>
                 </div>
               </form>
