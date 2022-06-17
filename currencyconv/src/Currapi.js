@@ -3,10 +3,10 @@ import axios from "axios";
 
 let Currapi = () => {
   let [value, setValue] = useState(0);
-  let [convvalue, setConvvalue] = useState([]);
   let [signvalue, setsignValue] = useState();
   let [signvalue1, setsignValue1] = useState(-1);
   let [result, setResult] = useState();
+
   let getHandler = (event) => {
     setValue(parseInt(event.target.value));
   };
@@ -23,14 +23,17 @@ let Currapi = () => {
   };
 
   let convertHandler = () => {
+    if (signvalue == signvalue1) {
+      setResult(value);
+    }
     axios
       .get(
-        `https://free.currconv.com/api/v7/convert?q=${signvalue1}_${signvalue}&compact=ultra&apiKey=7255b06c118ad064521a`
+        `https://api.frankfurter.app/latest?amount=${value}&from=${signvalue1}&to=${signvalue}`
       )
       .then((response) => {
-        console.log(response.data[`${signvalue1}_${signvalue}`]);
-        setConvvalue(response.data[`${signvalue1}_${signvalue}`]);
-        setResult(convvalue * value);
+        console.log(response.data);
+        console.log(response.data.rates[signvalue]);
+        setResult(response.data.rates[signvalue]);
       })
       .catch((error) => {
         console.log(error);
@@ -38,11 +41,6 @@ let Currapi = () => {
   };
   return (
     <div className="container mt-5 mb-5">
-      <pre>{value}</pre>
-      <pre>{JSON.stringify(convvalue)}</pre>
-      <pre>{signvalue1}</pre>
-      <pre>{signvalue}</pre>
-      <pre>{result}</pre>
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-6">
@@ -128,12 +126,11 @@ let Currapi = () => {
                   />
                 </div>
 
-                <div>
+                <div className="text-warning">
                   <h6>
-                    The Value of Entered Amount Is{" "}
-                    <span className="text-warning ">
-                      {result}({signvalue})
-                    </span>
+                    {result >= 0
+                      ? `THE VALUE OF ENTERED AMOUNT IN ${signvalue1} is ${result}(${signvalue})`
+                      : `Please select currency and convert`}
                   </h6>
                 </div>
               </form>
@@ -144,5 +141,4 @@ let Currapi = () => {
     </div>
   );
 };
-
 export default Currapi;
