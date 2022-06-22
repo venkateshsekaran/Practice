@@ -1,0 +1,38 @@
+.contentArea {
+    margin-bottom: 17px;
+    padding: 9px 20px;
+    min-height: 100vh;
+    margin-top: 17px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 12px;
+    border-radius: 1px solid red;
+}
+
+.btn-primary {
+    background-color: #1e63bd;
+    border-color: #1762c4;
+}
+
+.form-control {
+    border-radius: 0px;
+    border-top: none;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.clientTableFormControl {
+    margin-bottom: 3.5%!important;
+}
+details[open]{
+    border : 1px solid red;
+}
+/* Adds an icon when the <details> is closed... */
+details > summary::after {
+  content: "Read More";
+}
+/* ...and switches it when <details> is open */
+details[open] > summary::after {
+  content: "Read Less";
+}
+details > summary::-webkit-details-marker {
+    display: none;
+  }

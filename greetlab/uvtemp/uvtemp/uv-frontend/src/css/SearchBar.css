@@ -1,0 +1,10 @@
+.searchBar {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+  padding: 0 15px;
+  height: 38px;
+  width: 25vw;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}

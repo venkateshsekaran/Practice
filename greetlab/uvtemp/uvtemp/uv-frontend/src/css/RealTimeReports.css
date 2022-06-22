@@ -1,0 +1,58 @@
+.table{
+    border:none;
+    outline:none;
+     margin:10px; 
+    padding:20px;
+    font-size:20px;
+    /* padding-left:490px; */
+    
+}
+.heading{
+    padding-left:400px;
+}
+.Address{
+    margin-left:200px;
+}
+.myTable{
+    width:100%;
+    border : 1px solid #eee;
+    margin: 15px 0;
+}
+
+.myTable thead {
+    background-color: #eee;
+}
+.myTable thead tr th{
+    padding: 10px 5px;
+    font-size: 13px;
+}
+.myTable tbody tr td{
+    padding: 10px 5px;
+}
+.myfont{
+    font-size: 18px;
+    font-weight: 600;
+}
+.building{
+    padding: 10px;
+    border-radius: 17px;
+    margin: 10px 0;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.backEE{
+    background-color: #eee;
+    padding: 10px 0;
+}
+.color1{
+    font-size: 16px;
+    font-weight: 600;
+}
+.myTable2 tbody tr td{
+    font-size: 18px;
+    padding: 7px 0;
+}
+.clickAble{
+    background-color: #eee;
+    border-radius: 7px;
+    text-align: center;
+}
