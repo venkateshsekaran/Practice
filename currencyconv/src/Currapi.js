@@ -23,7 +23,7 @@ let Currapi = () => {
   };
 
   let convertHandler = () => {
-    if (signvalue == signvalue1) {
+    if (signvalue === signvalue1) {
       setResult(value);
     }
     axios
@@ -41,6 +41,10 @@ let Currapi = () => {
   };
   return (
     <div className="container mt-5 mb-5">
+      <pre>{value}</pre>
+      <pre>{signvalue1}</pre>
+      <pre>{signvalue}</pre>
+      <pre>{result}</pre>
       <div className="row">
         <div className="col-md-3"></div>
         <div className="col-md-6">
