@@ -8,3 +8,5 @@ while i<=len(t)-1:
 '''
 for x in t:
     print(x)
+    
+ 

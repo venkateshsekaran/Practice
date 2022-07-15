@@ -12,3 +12,9 @@ s  = {10,20,30,40,10,10}
 emp ={ 101:'a'}
 
 print(type(color))
+print(type(t))
+print(type(s))
+print(type(emp))
+print(b)
+print(ba)
+print(is_Avai)

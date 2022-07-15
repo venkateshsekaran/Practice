@@ -1,5 +1,5 @@
 import reactdom from "react-dom";
 
-import App from "../src/Pagination2/App";
+import App from "../src/App";
 
 reactdom.render(<App />, document.getElementById("check"));

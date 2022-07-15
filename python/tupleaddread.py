@@ -5,4 +5,4 @@ print(marks)
 
 l = [10,20,30]
 t = tuple(l)
-print(type(t))x
+print(type(t))
