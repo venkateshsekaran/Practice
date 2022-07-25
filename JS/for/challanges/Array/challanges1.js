@@ -21,7 +21,7 @@ function myFunction(a) {
 let output1 = myFunction("1234");
 console.log(output1);*/
 
-function myFunction(a) {
+/*function myFunction(a) {
   return a.reduce((acc, cur, i, arr) => {
     let value = 1;
     for (let j = 0; j < arr.length; j++) {
@@ -34,4 +34,12 @@ function myFunction(a) {
   }, []);
 }
 let output = myFunction([4, 5, 2, 3]);
-console.log(output);
+console.log(output);*/
+
+importPackage(java.io);
+importPackage(java.lang);
+
+let reader = new BufferedReader(new InputStreamReader(System["in"]));
+let a = reader.split(" ");
+let b = a.filter((el) => parseInt(el) >= 10).length;
+console.log(b);
