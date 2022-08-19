@@ -7,7 +7,7 @@ const User = () => {
     return state.users;
   });
 
-  useEffect(() => {
+  useEffect(() => {ll
     //dispatch an action
     dispatch(loadDataAction());
   }, []);
